@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ⚙️ TROCAR: título e meta description -->
+<title>Helena Soares · Massoterapia Integrativa | Florianópolis</title>
+<meta name="description" content="Atendimento exclusivo de massoterapia em Florianópolis. Massagem terapêutica, drenagem linfática e relaxamento profundo em ambiente acolhedor.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --cream:#F5EFE6;
+    --bone:#EDE4D3;
+    --clay:#B85C3C;
+    --clay-deep:#8C3F25;
+    --moss:#5C6B4F;
+    --ink:#2A1E17;
+    --ink-soft:#4A3C32;
+  }
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Manrope',sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    font-weight:300;
+    letter-spacing:0.01em;
+  }
+  .serif{font-family:'Fraunces',serif;font-weight:300;letter-spacing:-0.02em}
+  .serif-italic{font-family:'Fraunces',serif;font-style:italic;font-weight:300}
+  .micro{font-family:'Manrope',sans-serif;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;font-weight:500}
+  .grain{position:relative}
+  .grain::after{
+    content:"";position:absolute;inset:0;pointer-events:none;opacity:.06;
+    background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    mix-blend-mode:multiply;
+  }
+  .fade-up{animation:fu 1.2s cubic-bezier(.2,.7,.2,1) both}
+  .fade-up.d1{animation-delay:.15s} .fade-up.d2{animation-delay:.35s} .fade-up.d3{animation-delay:.55s}
+  @keyframes fu{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+  .reveal{opacity:0;transform:translateY(28px);transition:all 1s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  .btn-clay{background:var(--ink);color:var(--cream);transition:all .4s ease}
+  .btn-clay:hover{background:var(--clay);letter-spacing:0.04em}
+  .link-underline{position:relative;display:inline-block}
+  .link-underline::after{content:"";position:absolute;left:0;bottom:-3px;height:1px;width:100%;background:currentColor;transform-origin:right;transform:scaleX(1);transition:transform .5s}
+  .link-underline:hover::after{transform-origin:left;transform:scaleX(0);animation:lu .8s .5s forwards}
+  @keyframes lu{from{transform-origin:left;transform:scaleX(0)}to{transform-origin:left;transform:scaleX(1)}}
+  .marquee{display:flex;animation:mq 40s linear infinite}
+  @keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  .num{font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body class="grain">
+
+<!-- NAV -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-[var(--cream)]/90 backdrop-blur-md border-b border-[var(--ink)]/10">
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-12 py-5 flex items-center justify-between">
+    <a href="#" class="serif text-xl">Helena Soares<span class="text-[var(--clay)]">.</span></a>
+    <div class="hidden md:flex items-center gap-10 micro">
+      <a href="#sobre" class="link-underline">Sobre</a>
+      <a href="#tratamentos" class="link-underline">Tratamentos</a>
+      <a href="#espaco" class="link-underline">O Espaço</a>
+      <a href="#depoimentos" class="link-underline">Depoimentos</a>
+    </div>
+    <!-- ⚙️ TROCAR: link do WhatsApp (formato wa.me/55DDDNUMERO) -->
+    <a href="https://wa.me/5548999999999?text=Ol%C3%A1%20Helena%2C%20gostaria%20de%20agendar%20uma%20sess%C3%A3o."
+       class="btn-clay micro px-5 py-3 hidden sm:inline-block">Agendar</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-12 grid lg:grid-cols-12 gap-8 items-center">
+    <div class="lg:col-span-7 relative z-10">
+      <div class="micro text-[var(--clay-deep)] mb-8 fade-up">
+        <span class="inline-block w-10 h-px bg-[var(--clay-deep)] align-middle mr-3"></span>
+        Massoterapia Integrativa · Desde 2017
+      </div>
+      <h1 class="serif text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[0.95] mb-8 fade-up d1">
+        O corpo<br>
+        <span class="serif-italic text-[var(--clay)]">também tem</span><br>
+        memória.
+      </h1>
+      <p class="text-lg md:text-xl max-w-md text-[var(--ink-soft)] leading-relaxed mb-10 fade-up d2">
+        Sessões individuais que combinam técnica oriental, escuta e silêncio — para quem percebe que descansar virou urgência.
+      </p>
+      <div class="flex flex-wrap gap-4 items-center fade-up d3">
+        <a href="https://wa.me/5548999999999?text=Ol%C3%A1%20Helena%2C%20gostaria%20de%20agendar%20uma%20sess%C3%A3o."
+           class="btn-clay micro px-8 py-4">Agendar uma sessão</a>
+        <a href="#tratamentos" class="micro px-2 py-4 link-underline text-[var(--ink)]">Ver tratamentos →</a>
+      </div>
+    </div>
+    <div class="lg:col-span-5 relative">
+      <div class="relative aspect-[3/4] overflow-hidden fade-up d2">
+        <!-- ⚙️ TROCAR: foto principal (sala, mãos, ambiente) -->
+        <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=900&q=85"
+             alt="Ambiente de atendimento" class="w-full h-full object-cover">
+      </div>
+      <div class="absolute -bottom-8 -left-8 lg:-left-16 w-40 lg:w-56 aspect-square overflow-hidden border-8 border-[var(--cream)] hidden md:block fade-up d3">
+        <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=500&q=85"
+             alt="Detalhe" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </div>
+
+  <!-- decorative number -->
+  <div class="absolute right-6 top-32 hidden xl:block opacity-30">
+    <div class="micro text-[var(--ink)] writing-vertical" style="writing-mode:vertical-rl">N°01 — Acolhimento</div>
+  </div>
+</section>
+
+<!-- MARQUEE / valores -->
+<section class="py-8 border-y border-[var(--ink)]/10 overflow-hidden bg-[var(--bone)]">
+  <div class="marquee whitespace-nowrap">
+    <div class="flex shrink-0 items-center gap-12 pr-12 serif text-2xl md:text-3xl">
+      <span>Presença</span><span class="text-[var(--clay)]">✦</span>
+      <span class="serif-italic">Escuta atenta</span><span class="text-[var(--clay)]">✦</span>
+      <span>Toque consciente</span><span class="text-[var(--clay)]">✦</span>
+      <span class="serif-italic">Silêncio</span><span class="text-[var(--clay)]">✦</span>
+      <span>Tempo seu</span><span class="text-[var(--clay)]">✦</span>
+    </div>
+    <div class="flex shrink-0 items-center gap-12 pr-12 serif text-2xl md:text-3xl" aria-hidden="true">
+      <span>Presença</span><span class="text-[var(--clay)]">✦</span>
+      <span class="serif-italic">Escuta atenta</span><span class="text-[var(--clay)]">✦</span>
+      <span>Toque consciente</span><span class="text-[var(--clay)]">✦</span>
+      <span class="serif-italic">Silêncio</span><span class="text-[var(--clay)]">✦</span>
+      <span>Tempo seu</span><span class="text-[var(--clay)]">✦</span>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="py-24 lg:py-36">
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-12 grid lg:grid-cols-12 gap-12 items-start">
+    <div class="lg:col-span-5 reveal">
+      <div class="aspect-[4/5] overflow-hidden">
+        <!-- ⚙️ TROCAR: foto da profissional -->
+        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=800&q=85"
+             alt="Helena Soares" class="w-full h-full object-cover">
+      </div>
+      <div class="mt-6 micro text-[var(--ink-soft)]">Helena Soares — CRT 11.482</div>
+    </div>
+    <div class="lg:col-span-6 lg:col-start-7 reveal">
+      <div class="micro text-[var(--clay-deep)] mb-6">
+        <span class="inline-block w-10 h-px bg-[var(--clay-deep)] align-middle mr-3"></span>
+        N°02 — Quem atende
+      </div>
+      <h2 class="serif text-4xl md:text-5xl lg:text-6xl leading-[1.05] mb-8">
+        Sete anos<br>
+        <span class="serif-italic text-[var(--clay)]">cuidando</span> de quem<br>
+        cuida demais.
+      </h2>
+      <div class="space-y-5 text-[var(--ink-soft)] leading-relaxed text-lg max-w-xl">
+        <p>Comecei na massoterapia depois de viver o que muitas das minhas clientes vivem hoje: rotina cheia, ombros travados, sono que não restaura. Foi numa sessão de shiatsu que entendi que terapia manual não é luxo — é manutenção.</p>
+        <p>Atendo em estúdio próprio, com agenda enxuta e foco em retorno. Cada sessão é desenhada a partir de uma escuta inicial: o corpo conta, eu ouço.</p>
+      </div>
+      <div class="grid grid-cols-3 gap-6 mt-12 pt-12 border-t border-[var(--ink)]/15">
+        <div>
+          <div class="serif text-4xl num mb-1">7+</div>
+          <div class="micro text-[var(--ink-soft)]">Anos de prática</div>
+        </div>
+        <div>
+          <div class="serif text-4xl num mb-1">1.2k</div>
+          <div class="micro text-[var(--ink-soft)]">Sessões realizadas</div>
+        </div>
+        <div>
+          <div class="serif text-4xl num mb-1">94%</div>
+          <div class="micro text-[var(--ink-soft)]">Retornam ao 1° mês</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRATAMENTOS -->
+<section id="tratamentos" class="py-24 lg:py-36 bg-[var(--bone)]">
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+    <div class="grid lg:grid-cols-12 gap-8 mb-16">
+      <div class="lg:col-span-4 reveal">
+        <div class="micro text-[var(--clay-deep)] mb-6">
+          <span class="inline-block w-10 h-px bg-[var(--clay-deep)] align-middle mr-3"></span>
+          N°03 — Tratamentos
+        </div>
+        <h2 class="serif text-4xl md:text-5xl lg:text-6xl leading-[1.05]">
+          Cada toque<br>
+          <span class="serif-italic text-[var(--clay)]">tem propósito.</span>
+        </h2>
+      </div>
+      <p class="lg:col-span-5 lg:col-start-8 text-[var(--ink-soft)] text-lg leading-relaxed reveal">
+        Sessões individuais de 60 ou 90 minutos. Antes de qualquer técnica, conversamos — para que a sessão atenda seu corpo de hoje, não um protocolo pronto.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-[var(--ink)]/15">
+      <!-- Card 1 -->
+      <article class="bg-[var(--bone)] p-8 lg:p-10 group cursor-pointer transition-all hover:bg-[var(--cream)] reveal">
+        <div class="flex justify-between items-start mb-8">
+          <span class="serif-italic text-3xl text-[var(--clay)] num">01</span>
+          <span class="micro text-[var(--ink-soft)]">60 min</span>
+        </div>
+        <h3 class="serif text-3xl mb-3">Massagem Terapêutica</h3>
+        <p class="text-[var(--ink-soft)] leading-relaxed mb-6">Pressão profunda em pontos específicos. Indicada para dores crônicas em pescoço, ombros e lombar.</p>
+        <div class="flex items-end justify-between pt-6 border-t border-[var(--ink)]/15">
+          <span class="serif text-2xl">R$ 220</span>
+          <span class="micro text-[var(--clay)] group-hover:translate-x-1 transition-transform">Agendar →</span>
+        </div>
+      </article>
+      <!-- Card 2 -->
+      <article class="bg-[var(--bone)] p-8 lg:p-10 group cursor-pointer transition-all hover:bg-[var(--cream)] reveal">
+        <div class="flex justify-between items-start mb-8">
+          <span class="serif-italic text-3xl text-[var(--clay)] num">02</span>
+          <span class="micro text-[var(--ink-soft)]">90 min</span>
+        </div>
+        <h3 class="serif text-3xl mb-3">Drenagem Linfática</h3>
+        <p class="text-[var(--ink-soft)] leading-relaxed mb-6">Manobras leves e ritmadas que ativam o sistema linfático. Reduz inchaço e melhora circulação.</p>
+        <div class="flex items-end justify-between pt-6 border-t border-[var(--ink)]/15">
+          <span class="serif text-2xl">R$ 280</span>
+          <span class="micro text-[var(--clay)] group-hover:translate-x-1 transition-transform">Agendar →</span>
+        </div>
+      </article>
+      <!-- Card 3 -->
+      <article class="bg-[var(--bone)] p-8 lg:p-10 group cursor-pointer transition-all hover:bg-[var(--cream)] reveal">
+        <div class="flex justify-between items-start mb-8">
+          <span class="serif-italic text-3xl text-[var(--clay)] num">03</span>
+          <span class="micro text-[var(--ink-soft)]">90 min</span>
+        </div>
+        <h3 class="serif text-3xl mb-3">Pedras Quentes</h3>
+        <p class="text-[var(--ink-soft)] leading-relaxed mb-6">Calor profundo que relaxa musculatura travada. Sessão indicada para fim de ciclos intensos.</p>
+        <div class="flex items-end justify-between pt-6 border-t border-[var(--ink)]/15">
+          <span class="serif text-2xl">R$ 290</span>
+          <span class="micro text-[var(--clay)] group-hover:translate-x-1 transition-transform">Agendar →</span>
+        </div>
+      </article>
+      <!-- Card 4 -->
+      <article class="bg-[var(--bone)] p-8 lg:p-10 group cursor-pointer transition-all hover:bg-[var(--cream)] reveal">
+        <div class="flex justify-between items-start mb-8">
+          <span class="serif-italic text-3xl text-[var(--clay)] num">04</span>
+          <span class="micro text-[var(--ink-soft)]">75 min</span>
+        </div>
+        <h3 class="serif text-3xl mb-3">Shiatsu</h3>
+        <p class="text-[var(--ink-soft)] leading-relaxed mb-6">Pressão em meridianos da medicina tradicional chinesa. Reorganiza energia e libera tensão acumulada.</p>
+        <div class="flex items-end justify-between pt-6 border-t border-[var(--ink)]/15">
+          <span class="serif text-2xl">R$ 250</span>
+          <span class="micro text-[var(--clay)] group-hover:translate-x-1 transition-transform">Agendar →</span>
+        </div>
+      </article>
+      <!-- Card 5 -->
+      <article class="bg-[var(--bone)] p-8 lg:p-10 group cursor-pointer transition-all hover:bg-[var(--cream)] reveal">
+        <div class="flex justify-between items-start mb-8">
+          <span class="serif-italic text-3xl text-[var(--clay)] num">05</span>
+          <span class="micro text-[var(--ink-soft)]">60 min</span>
+        </div>
+        <h3 class="serif text-3xl mb-3">Relaxante Holística</h3>
+        <p class="text-[var(--ink-soft)] leading-relaxed mb-6">Movimentos longos e ritmo lento. Para quem precisa desacelerar o sistema nervoso, não só o corpo.</p>
+        <div class="flex items-end justify-between pt-6 border-t border-[var(--ink)]/15">
+          <span class="serif text-2xl">R$ 200</span>
+          <span class="micro text-[var(--clay)] group-hover:translate-x-1 transition-transform">Agendar →</span>
+        </div>
+      </article>
+      <!-- Card 6 — pacote -->
+      <article class="bg-[var(--ink)] text-[var(--cream)] p-8 lg:p-10 group cursor-pointer reveal relative overflow-hidden">
+        <div class="absolute top-4 right-4 micro text-[var(--clay)]">Recomendado</div>
+        <div class="flex justify-between items-start mb-8">
+          <span class="serif-italic text-3xl text-[var(--clay)] num">06</span>
+          <span class="micro opacity-70">4 sessões</span>
+        </div>
+        <h3 class="serif text-3xl mb-3">Programa Mensal</h3>
+        <p class="opacity-80 leading-relaxed mb-6">Quatro sessões no mês com técnicas combinadas. Resultado real só vem com continuidade.</p>
+        <div class="flex items-end justify-between pt-6 border-t border-[var(--cream)]/20">
+          <div>
+            <span class="serif text-2xl">R$ 760</span>
+            <span class="micro opacity-60 ml-2 line-through">R$ 880</span>
+          </div>
+          <span class="micro text-[var(--clay)] group-hover:translate-x-1 transition-transform">Agendar →</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ESPAÇO -->
+<section id="espaco" class="py-24 lg:py-36">
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+    <div class="grid lg:grid-cols-12 gap-12 mb-16 items-end">
+      <div class="lg:col-span-6 reveal">
+        <div class="micro text-[var(--clay-deep)] mb-6">
+          <span class="inline-block w-10 h-px bg-[var(--clay-deep)] align-middle mr-3"></span>
+          N°04 — O espaço
+        </div>
+        <h2 class="serif text-4xl md:text-5xl lg:text-6xl leading-[1.05]">
+          Um lugar feito para<br>
+          <span class="serif-italic text-[var(--clay)]">você esquecer</span><br>
+          que tem celular.
+        </h2>
+      </div>
+      <p class="lg:col-span-5 lg:col-start-8 text-[var(--ink-soft)] text-lg leading-relaxed reveal">
+        Estúdio reservado, sem recepção compartilhada. Você chega, é recebida com chá quente, e tem 30 minutos só seus depois da sessão.
+      </p>
+    </div>
+    <div class="grid grid-cols-12 gap-4 lg:gap-6">
+      <div class="col-span-12 md:col-span-7 aspect-[4/3] overflow-hidden reveal">
+        <!-- ⚙️ TROCAR: foto do espaço de atendimento -->
+        <img src="https://images.unsplash.com/photo-1600618528240-fb9fc964b853?w=1200&q=85"
+             alt="Sala de atendimento" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000">
+      </div>
+      <div class="col-span-6 md:col-span-5 aspect-square overflow-hidden reveal">
+        <img src="https://images.unsplash.com/photo-1583416750470-965b2707b355?w=800&q=85"
+             alt="Detalhe" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000">
+      </div>
+      <div class="col-span-6 md:col-span-4 aspect-[3/4] overflow-hidden reveal">
+        <img src="https://images.unsplash.com/photo-1620733723572-11c53f73a416?w=800&q=85"
+             alt="Ambiente" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000">
+      </div>
+      <div class="col-span-12 md:col-span-8 aspect-[16/9] md:aspect-auto overflow-hidden reveal">
+        <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=1200&q=85"
+             alt="Detalhe" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="depoimentos" class="py-24 lg:py-36 bg-[var(--ink)] text-[var(--cream)] grain">
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+    <div class="grid lg:grid-cols-12 gap-8 mb-16">
+      <div class="lg:col-span-6 reveal">
+        <div class="micro text-[var(--clay)] mb-6">
+          <span class="inline-block w-10 h-px bg-[var(--clay)] align-middle mr-3"></span>
+          N°05 — Quem já passou por aqui
+        </div>
+        <h2 class="serif text-4xl md:text-5xl lg:text-6xl leading-[1.05]">
+          Não é massagem.<br>
+          <span class="serif-italic text-[var(--clay)]">É reset.</span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+      <figure class="reveal">
+        <div class="serif text-5xl text-[var(--clay)] mb-4 leading-none">"</div>
+        <blockquote class="serif text-xl lg:text-2xl leading-relaxed mb-8">
+          Saí da primeira sessão e dormi nove horas seguidas. Não acontecia há três anos.
+        </blockquote>
+        <figcaption class="flex items-center gap-4 pt-6 border-t border-[var(--cream)]/20">
+          <!-- ⚙️ TROCAR: avatar do depoimento -->
+          <div class="w-12 h-12 rounded-full overflow-hidden bg-[var(--clay)]/30 shrink-0">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <div class="serif text-lg">Mariana C.</div>
+            <div class="micro opacity-60">Advogada · há 2 anos</div>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="reveal" style="transition-delay:.15s">
+        <div class="serif text-5xl text-[var(--clay)] mb-4 leading-none">"</div>
+        <blockquote class="serif text-xl lg:text-2xl leading-relaxed mb-8">
+          A Helena escuta antes de tocar. Isso muda tudo. Hoje é parte da minha rotina, não emergência.
+        </blockquote>
+        <figcaption class="flex items-center gap-4 pt-6 border-t border-[var(--cream)]/20">
+          <div class="w-12 h-12 rounded-full overflow-hidden bg-[var(--clay)]/30 shrink-0">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <div class="serif text-lg">Júlia R.</div>
+            <div class="micro opacity-60">Arquiteta · há 1 ano</div>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="reveal" style="transition-delay:.3s">
+        <div class="serif text-5xl text-[var(--clay)] mb-4 leading-none">"</div>
+        <blockquote class="serif text-xl lg:text-2xl leading-relaxed mb-8">
+          Já fiz drenagem em quatro lugares antes. Nenhum perto. Aqui virou mensal sem pensar.
+        </blockquote>
+        <figcaption class="flex items-center gap-4 pt-6 border-t border-[var(--cream)]/20">
+          <div class="w-12 h-12 rounded-full overflow-hidden bg-[var(--clay)]/30 shrink-0">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=80" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <div class="serif text-lg">Beatriz M.</div>
+            <div class="micro opacity-60">Empresária · há 8 meses</div>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- CTA AGENDAMENTO -->
+<section class="py-24 lg:py-36 relative overflow-hidden">
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-12 text-center reveal">
+    <div class="micro text-[var(--clay-deep)] mb-8">
+      <span class="inline-block w-10 h-px bg-[var(--clay-deep)] align-middle mr-3"></span>
+      Agendamento
+      <span class="inline-block w-10 h-px bg-[var(--clay-deep)] align-middle ml-3"></span>
+    </div>
+    <h2 class="serif text-5xl md:text-6xl lg:text-7xl leading-[1.0] mb-8 max-w-4xl mx-auto">
+      Sua próxima<br>
+      <span class="serif-italic text-[var(--clay)]">pausa real</span><br>
+      começa aqui.
+    </h2>
+    <p class="text-lg text-[var(--ink-soft)] max-w-md mx-auto mb-10 leading-relaxed">
+      Atendimentos com hora marcada, terça a sábado. Confirmação imediata pelo WhatsApp.
+    </p>
+    <a href="https://wa.me/5548999999999?text=Ol%C3%A1%20Helena%2C%20gostaria%20de%20agendar%20uma%20sess%C3%A3o."
+       class="btn-clay micro inline-block px-10 py-5 text-sm">
+      Conversar pelo WhatsApp →
+    </a>
+    <div class="mt-12 micro text-[var(--ink-soft)]">
+      <!-- ⚙️ TROCAR: telefone display -->
+      ou ligue (48) 9 9999-9999
+    </div>
+  </div>
+</section>
+
+<!-- ========== SEÇÃO OFERTA — FREEDOM PULSE ========== -->
+<section id="oferta" class="relative bg-[var(--ink)] text-[var(--cream)] grain py-24 lg:py-32 overflow-hidden">
+  <!-- numeral decorativo -->
+  <div class="absolute -right-8 lg:-right-16 top-1/2 -translate-y-1/2 serif text-[18rem] lg:text-[32rem] leading-none opacity-[0.04] select-none pointer-events-none num">10</div>
+
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10 grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+
+    <div class="lg:col-span-7 reveal">
+      <div class="micro text-[var(--clay)] mb-8">
+        <span class="inline-block w-10 h-px bg-[var(--clay)] align-middle mr-3"></span>
+        Atenção, massoterapeuta
+      </div>
+
+      <h2 class="serif text-4xl md:text-5xl lg:text-6xl leading-[1.0] mb-8">
+        Esse site<br>
+        <span class="serif-italic text-[var(--clay)]">pode ser seu.</span>
+      </h2>
+
+      <p class="text-lg lg:text-xl opacity-80 leading-relaxed max-w-2xl mb-10">
+        Você acabou de navegar por uma demonstração. Agora imagine sua próxima cliente fazendo o mesmo — encontrando você no Google, conhecendo seu trabalho, e marcando direto pelo WhatsApp. Sem post que some no feed. Sem indicação que esfria. Um endereço seu na internet, trabalhando 24h.
+      </p>
+
+      <ul class="space-y-4 mb-2">
+        <li class="flex items-start gap-4">
+          <span class="text-[var(--clay)] serif-italic shrink-0 text-xl leading-none mt-1">→</span>
+          <span class="opacity-90 leading-relaxed">Site completo entregue em até <strong class="font-medium">7 dias</strong></span>
+        </li>
+        <li class="flex items-start gap-4">
+          <span class="text-[var(--clay)] serif-italic shrink-0 text-xl leading-none mt-1">→</span>
+          <span class="opacity-90 leading-relaxed">WhatsApp integrado em <strong class="font-medium">todos os pontos de conversão</strong></span>
+        </li>
+        <li class="flex items-start gap-4">
+          <span class="text-[var(--clay)] serif-italic shrink-0 text-xl leading-none mt-1">→</span>
+          <span class="opacity-90 leading-relaxed">Otimizado para aparecer no <strong class="font-medium">Google da sua cidade</strong></span>
+        </li>
+        <li class="flex items-start gap-4">
+          <span class="text-[var(--clay)] serif-italic shrink-0 text-xl leading-none mt-1">→</span>
+          <span class="opacity-90 leading-relaxed">Suas fotos, seus textos, <strong class="font-medium">sua identidade</strong></span>
+        </li>
+        <li class="flex items-start gap-4">
+          <span class="text-[var(--clay)] serif-italic shrink-0 text-xl leading-none mt-1">→</span>
+          <span class="opacity-90 leading-relaxed">Hospedagem e domínio configurados por <strong class="font-medium">1 ano</strong></span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- card de oferta -->
+    <div class="lg:col-span-5 reveal" style="transition-delay:.2s">
+      <div class="border border-[var(--cream)]/20 p-8 lg:p-10 bg-[var(--cream)]/[0.02] backdrop-blur-sm">
+
+        <div class="micro text-[var(--clay)] mb-3">Investimento único</div>
+        <div class="serif text-6xl lg:text-7xl mb-1 leading-none">R$ 450</div>
+        <div class="micro opacity-60 mb-8">ou 3x de R$ 167 sem juros</div>
+
+        <div class="border-t border-[var(--cream)]/15 pt-6 mb-8">
+          <div class="flex items-center justify-between mb-3">
+            <span class="micro">Vagas com este valor</span>
+            <!-- ⚙️ TROCAR conforme for fechando: 10/10 → 9/10 → 8/10... -->
+            <span class="serif-italic text-[var(--clay)] num text-xl">10/10</span>
+          </div>
+          <div class="h-1 bg-[var(--cream)]/15 overflow-hidden">
+            <!-- ⚙️ TROCAR a largura: 0% (10 vagas), 20% (8), 50% (5), 80% (2) -->
+            <div class="h-full bg-[var(--clay)] transition-all duration-500" style="width:0%"></div>
+          </div>
+          <div class="micro opacity-60 mt-3 leading-relaxed">Ao preencher as 10 vagas, o valor passa para R$ 1.200.</div>
+        </div>
+
+        <a href="https://wa.me/5548992036568?text=Ol%C3%A1%20Anderson%2C%20vi%20a%20demonstra%C3%A7%C3%A3o%20do%20site.%20Quero%20garantir%20minha%20vaga%20por%20R%24%20450."
+           class="group block bg-[var(--clay)] hover:bg-[var(--clay-deep)] text-[var(--cream)] py-5 px-6 text-center micro transition-all">
+          <span class="inline-flex items-center gap-2">
+            Garantir minha vaga
+            <span class="group-hover:translate-x-1 transition-transform">→</span>
+          </span>
+        </a>
+
+        <div class="micro opacity-60 text-center mt-5 leading-relaxed">
+          (48) 9 9203-6568<br>
+          <span class="opacity-70">Resposta em até 1 hora</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- assinatura -->
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-12 mt-20 pt-8 border-t border-[var(--cream)]/15 relative z-10 flex flex-col md:flex-row justify-between gap-3 micro opacity-60">
+    <div>Esta página é uma demonstração apresentada por <span class="text-[var(--clay)]">Freedom Pulse</span></div>
+    <div>Sites profissionais para terapeutas e clínicas</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[var(--bone)] border-t border-[var(--ink)]/15 pt-20 pb-10">
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+    <div class="grid lg:grid-cols-12 gap-12 mb-16">
+      <div class="lg:col-span-5">
+        <div class="serif text-3xl mb-6">Helena Soares<span class="text-[var(--clay)]">.</span></div>
+        <p class="text-[var(--ink-soft)] leading-relaxed max-w-sm mb-6">
+          Massoterapia integrativa em ambiente exclusivo. Atendimento por agendamento.
+        </p>
+        <!-- ⚙️ TROCAR: redes sociais -->
+        <div class="flex gap-6 micro">
+          <a href="#" class="link-underline">Instagram</a>
+          <a href="#" class="link-underline">WhatsApp</a>
+        </div>
+      </div>
+      <div class="lg:col-span-3 lg:col-start-7">
+        <div class="micro text-[var(--ink-soft)] mb-4">Endereço</div>
+        <!-- ⚙️ TROCAR: endereço -->
+        <p class="serif text-lg leading-snug">
+          Rua das Acácias, 142<br>
+          Lagoa da Conceição<br>
+          Florianópolis · SC
+        </p>
+      </div>
+      <div class="lg:col-span-3">
+        <div class="micro text-[var(--ink-soft)] mb-4">Horários</div>
+        <!-- ⚙️ TROCAR: horários -->
+        <p class="serif text-lg leading-snug">
+          Terça a sexta · 09h–19h<br>
+          Sábado · 09h–14h<br>
+          Domingo e segunda · fechado
+        </p>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-[var(--ink)]/15 flex flex-col md:flex-row justify-between gap-4 micro text-[var(--ink-soft)]">
+      <div>© 2025 Helena Soares Massoterapia · CRT 11.482</div>
+      <div>Site por <span class="text-[var(--clay)]">Freedom Pulse</span></div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp flutuante -->
+<a href="https://wa.me/5548999999999?text=Ol%C3%A1%20Helena%2C%20gostaria%20de%20agendar%20uma%20sess%C3%A3o."
+   class="fixed bottom-6 right-6 z-50 bg-[var(--clay)] text-[var(--cream)] rounded-full p-4 shadow-2xl hover:scale-110 transition-transform"
+   aria-label="WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+  // reveal on scroll
+  const obs=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}});
+  },{threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
